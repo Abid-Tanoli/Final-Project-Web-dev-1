@@ -1,0 +1,373 @@
+/* for header */
+@media screen and (min-width: 1601px) {
+    header {
+        padding: 30px;
+    }
+
+    .logo h1 {
+        font-size: 3em;
+    }
+
+    ul li {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .logo h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .logo h1 {
+        font-size: 2.2em;
+    }
+
+    ul li {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo h1 {
+        font-size: 2em;
+    }
+
+    ul li {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    ul li {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        gap: 5px;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    #icon {
+        font-size: 1.5em;
+    }
+}
+
+/* for Slider and Dots */
+
+@media screen and (min-width: 1601px) {
+    .slider {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .content {
+        width: 50vw;
+    }
+
+    #prev,
+    #next {
+        font-size: 4em;
+    }
+
+ #next{
+        position: absolute;
+        top:70%;
+        right: 23vw;
+    }
+    #prev{
+        position: absolute;
+        top:70%;
+        left:180px;
+    }
+    .dot {
+        top: 20px;
+        left: -40px;
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .slider {
+        width: 85vw;
+        height: 85vh;
+    }
+
+    #prev,
+    #next {
+        font-size: 3.5em;
+    }
+    #next{
+        position: absolute;
+        top:50%;
+        right: 20vw;
+    }
+    #prev{
+        position: absolute;
+        top:50%;
+        left:120px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .slider {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .content {
+        width: 55vw;
+    }
+
+    #prev,
+    #next {
+        font-size: 3em;
+    }
+    
+    #next{
+        position: absolute;
+        top:72%;
+        right: 18vw;
+    }
+    #prev{
+        position: absolute;
+        top:72%;
+        left:60px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: -180px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .slider {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .content {
+        top: 80px;
+        left: 20px;
+        width: 70vw;
+    }
+
+    #prev,
+    #next {
+        font-size: 2.5em;
+    }
+
+    #next{
+        position: absolute;
+        top:80%;
+        right: 14vw;
+    }
+    #prev{
+        position: absolute;
+        top:80%;
+        left:60px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: -100px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 60vh;
+    }
+
+    .content {
+        top: 60px;
+        left: 10px;
+        width: 80vw;
+    }
+
+    #prev,
+    #next {
+        font-size: 2em;
+    }
+    #next{
+        position: absolute;
+        top:71%;
+        right: 6vw;
+    }
+    #prev{
+        position: absolute;
+        top:71%;
+        left:60px;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        position: relative;
+        top: -200px;
+        left: 25px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider {
+        height: 50vh;
+    }
+
+    .content {
+        top: 40px;
+        left: 5px; 
+        width: 90vw;
+    }
+
+    #prev,
+    #next {
+        font-size: 1.5em;
+    }
+    #next{
+        position: absolute;
+        top:67%;
+        right: 6vw;
+    }
+    #prev{
+        position: absolute;
+        top:67%;
+        left:60px;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        position: relative;
+        top: -240px;
+        left: 25px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+}
+
+/* for rest of others */
+@media screen and (min-width: 1601px) {
+    .slider {
+        left: 150px;
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .main {
+        font-size: 8em;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .slider {
+        left: 100px;
+        width: 75vw;
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .slider {
+        left: 50px;
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .main {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .slider {
+        left: 20px;
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .main {
+        font-size: 5em;
+    }
+
+    .story-name {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .main {
+        font-size: 4em;
+    }
+
+    .responsive-story-img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        font-size: 3em;
+    }
+
+    .story-name {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}

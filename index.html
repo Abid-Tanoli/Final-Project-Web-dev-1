@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./Dark-Light mode/dark.css">
+    <link rel="stylesheet" href="dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8818a1b216.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MQstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Nature</h1>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>Contact</li>
+                <i id="icon" class="fa-solid fa-moon"></i>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slide current">
+            <div class="content">
+                <h1>Technogy</h1>
+                <p> Just took a screenshot on my phone by pressing the power and volume down button at the same time. So easy! #technology #handytip.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Architecture</h1>
+                <p>  The architecture of this building with large windows allows for plenty of natural light to filter in, creating a bright and airy space. #building #architecture #realestate.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Play Ground</h1>
+                <p>  Just swung on the playground swing for the first time in ages. The feeling of the wind in my hair and the sun on my face was pure bliss. #swing #outdoor #playground.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Swimming</h1>
+                <p> Swimming is not only a great workout, but it's also a fun way to cool off in the summer heat. Highly recommend giving it a try! #sport #water #person.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Food</h1>
+                <p> If you're looking for a quick snack, try a classic ham and cheese sandwich. It's simple, satisfying, and always hits the spot! #sandwich #snack #food.</p>
+            </div>
+        </div>
+    </div>
+        <button id="prev" onclick="prevslide()"> &#10094 </button>
+        <button id="next" onclick="nextslide()"> &#10095 </button>
+        
+        <div class="dots">
+            <div class="dot activedot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    <div class="container">
+        <div><h1 class="main">Nature Stories</h1></div>
+        <div class="story">
+        <div class="storylist">
+
+<div><div class="story-img"><img src="./Images/Stories/1.jpeg" class="responsive-story-img" width="260px" alt="story-1"></div>
+<h3 class="story-name">Where the earth breathes and the soul finds peace.</h3><p class="story-p" style="display: none;">"Where the earth breathes and the soul finds peace" speaks to the deep connection between nature and our inner selves. It’s a place where the natural world, untouched and pure, offers solace to a restless mind. The earth "breathes" through its winds, its rivers, and the rustling of leaves, reminding us of the constant cycle of life. In this environment, the noise of the modern world fades away, and a quiet calm takes over. Here, surrounded by the elements, we reconnect with ourselves, finding clarity and balance. Nature becomes a sanctuary, where peace flows effortlessly.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/2.jpeg" class="responsive-story-img" width="260px" alt="story-2"></div>
+<h3 class="story-name">Nature’s masterpiece, painted in shades of green and gold</h3><p class="story-p" style="display: none;">Nature’s masterpiece, painted in shades of green and gold" evokes a vision of nature’s unparalleled beauty. The lush greens of forests and fields symbolize life, growth, and renewal, while the golden hues of sunsets, autumn leaves, or sun-kissed landscapes represent warmth and abundance. Together, these colors form a canvas that constantly changes with the seasons, a dynamic artwork that never fades. Every element, from the grass beneath our feet to the skies above, plays its part in this grand composition. Nature, like an artist, effortlessly creates breathtaking scenes, reminding us of the beauty in every detail. It’s a masterpiece we are fortunate to witness daily.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/3.jpeg" class="responsive-story-img" width="260px" alt="story-3"></div>
+<h3 class="story-name">Beneath the trees, I find my roots and my wings.</h3><p class="story-p" style="display: none;">Beneath the trees, I find my roots and my wings" speaks to the grounding and liberating power of nature. The roots represent stability and connection to the earth, grounding us in the present moment, much like the trees themselves. Under their canopy, we feel a sense of belonging and deep inner strength. At the same time, nature inspires us to dream, explore, and rise above limitations, symbolized by wings. The stillness of the trees gives us clarity, while the vastness of the sky invites us to reach for new heights. In this balance, we find both comfort and freedom.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/4.jpeg" class="responsive-story-img" width="260px" alt="story-4"></div>
+<h3 class="story-name">The mountains are calling, and I must go</h3><p class="story-p" style="display: none;">"The mountains are calling, and I must go" captures the irresistible pull of nature’s grandeur. The mountains, with their towering peaks and rugged beauty, symbolize adventure, challenge, and discovery. They call to the wanderer’s spirit, offering a retreat from the noise of daily life into a world of serenity and awe. Climbing them is not just a physical journey but a journey of the soul, where one seeks clarity, purpose, and peace. The call of the mountains represents a deep yearning for freedom and connection with something greater than oneself. To answer this call is to embrace the unknown and find fulfillment in nature’s embrace.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div>
+    <div class="story-img">
+        <img src="./Images/Stories/5.jpeg" class="responsive-story-img" width="260px" alt="story-5">
+    </div>
+    <h3 class="story-name">In the arms of nature, every path leads to serenity.</h3>
+    <p class="story-p" style="display: none;">"In the arms of nature, every path leads to serenity" conveys the soothing embrace that nature offers. Walking through forests, along rivers, or across open fields, there’s a calm that washes over you, guiding you toward inner peace. Each trail, no matter how winding or steep, invites reflection and quiet contemplation. Nature’s beauty gently silences the chaos of the mind, replacing it with stillness and harmony. The vast landscapes and natural rhythms offer comfort, making every step a journey toward balance and tranquility. In nature’s embrace, serenity is not just a destination, but a feeling with every moment.</p>
+    <button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/6.jpeg" class="responsive-story-img" width="260px" alt="story-6"></div>
+<h3 class="story-name">Nature does not hurry, yet everything is accomplished.</h3><p class="story-p" style="display: none;">"Nature does not hurry, yet everything is accomplished" reflects the effortless pace at which nature operates. The seasons change, rivers flow, and plants grow all without rush, reminding us that progress doesn’t require haste. Nature’s patience is a powerful lesson; everything happens in its own time, with a quiet, steady rhythm. Just as a tree takes years to reach its full height, success and fulfillment in life come naturally when we allow things to unfold. Nature shows us that balance, patience, and persistence lead to completion. In its stillness, everything is achieved with perfect timing.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/7.jpeg" class="responsive-story-img" width="260px" alt="story-7"></div>
+<h3 class="story-name">Let the beauty of the earth quiet your mind and heal your soul</h3><p class="story-p" style="display: none;">"Let the beauty of the earth quiet your mind and heal your soul" speaks to the restorative power of nature. In the presence of natural beauty—whether it's a calm lake, a blooming meadow, or a majestic mountain—our racing thoughts begin to slow down. The tranquility of the earth's landscapes has a calming effect, allowing our minds to find peace amidst the chaos of daily life. As the noise fades, nature works silently to heal the soul, providing comfort and clarity. The simple beauty of the earth reminds us to pause, breathe, and reconnect with ourselves. In its embrace, we find renewal and strength.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/8.jpeg" class="responsive-story-img" width="260px" alt="story-8"></div>
+<h3 class="story-name">Lost in the wilderness, found in the stillness.</h3><p class="story-p" style="display: none;">"Lost in the wilderness, found in the stillness" reflects the transformative experience of immersing oneself in nature. In the vast, untamed wilderness, we may feel small and disconnected from the familiar world. Yet, it is in this solitude and quiet that we truly rediscover ourselves. Away from the distractions of modern life, the stillness of nature allows us to reflect, reset, and find clarity. The wilderness, with its peaceful silence, becomes a sanctuary where we let go of the noise and find inner calm. In losing ourselves to nature, we ultimately find a deeper sense of purpose and peace.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/9.jpeg" class="responsive-story-img" width="260px" alt="story-9"></div>
+<h3 class="story-name">Every sunset brings the promise of a new dawn</h3><p class="story-p" style="display: none;">"Every sunset brings the promise of a new dawn" symbolizes the cycle of endings and new beginnings. As the sun sets, casting the sky in brilliant colors, it marks the close of a day, reminding us that all things must come to an end. Yet, with every sunset comes the reassurance that darkness is temporary and a fresh start awaits. The promise of a new dawn represents hope, renewal, and the opportunity to begin again. Just as night gives way to morning, challenges and hardships eventually lead to brighter days. This natural rhythm teaches us resilience and optimism, knowing that each ending holds the seed of a new beginning.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/10.jpeg" class="responsive-story-img" width="260px" alt="story-10"></div>
+<h3 class="story-name">In every walk with nature, one receives far more than he seeks.</h3><p class="story-p" style="display: none;">"In every walk with nature, one receives far more than he seeks" emphasizes the unexpected gifts nature offers. When we set out on a walk through the woods or along a trail, we may be seeking fresh air or a brief escape. Yet, nature quietly gives us much more—peace of mind, inspiration, and a sense of connection to something greater than ourselves. The sights, sounds, and stillness of the natural world offer lessons in patience, simplicity, and beauty. Each step brings a deeper understanding of life’s rhythms and our place within them. In nature, we discover not just answers, but healing and growth beyond what we imagined.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/11.jpeg" class="responsive-story-img" width="260px" alt="story-11"></div>
+<h3 class="story-name">In the silence of nature, the loudest truths are revealed.</h3><p class="story-p" style="display: none;">"In the silence of nature, the loudest truths are revealed" reflects the profound wisdom that emerges when we embrace nature’s quiet. Away from the busyness and distractions, nature provides a sanctuary where we can hear our innermost thoughts clearly. The absence of noise creates a space for self-reflection, allowing us to confront the truths we might avoid in daily life. The rustle of leaves, the calm of a breeze, and the stillness of a landscape remind us that clarity often comes when we pause and listen. In nature’s silence, we discover deeper meanings and truths about ourselves and the world around us.</p>
+<button class="btn">Read More</button>
+</div>
+
+<div><div class="story-img"><img src="./Images/Stories/12.jpeg" class="responsive-story-img" width="260px" alt="story-12"></div>
+<h3 class="story-name">Breathe in the wild air, let your spirit roam free</h3><p class="story-p" style="display: none;">"Breathe in the wild air, let your spirit roam free" captures the liberating power of being in nature. The fresh, untamed air fills your lungs with a sense of renewal, washing away the weight of everyday life. It encourages you to embrace the freedom and openness of the natural world, where there are no boundaries or constraints. In the wild, your spirit is unburdened, allowed to wander and explore without limits. Nature offers a space to reconnect with your true self, to feel alive and unrestrained. Here, surrounded by the wilderness, your soul finds its wings and soars.</p>
+<button class="btn">Read More</button>
+</div>
+
+        </div>
+            </div>
+            </div>
+
+            <footer class="story-footer">
+                <h3 class="footer-title">Nature's Serenity</h3>
+                <p>“Embrace the journey and let nature guide your heart to tranquility.”</p>
+                <p>— A reminder to seek peace and harmony in the beauty that surrounds us.</p>
+                
+                <div class="footer-links">
+                    <a href="#contact" class="footer-link">Contact Us</a>
+                    <a href="#about" class="footer-link">About Us</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#privacy" class="footer-link">Privacy Policy</a>
+                </div>
+            </footer>
+    <script src="index.js"></script>
+    <script src="./Dark-Light mode/dark.js"></script>
+</body>
+</html>
