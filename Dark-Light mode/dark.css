@@ -1,23 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(243, 239, 239);
+    line-height: 1.6;
 }
 
 body.active {
     background-color: black;
     color: white;
 }
-
+header{
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 26px;
+    align-items: center;
+    max-width: 1200px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 ul {
@@ -26,6 +33,7 @@ ul {
 }
 
 ul li {
+    margin-left: 20px;
     list-style: none;
     margin-inline: 22px;
     font-size: 20px;
@@ -34,14 +42,24 @@ ul li {
 ul i {
     font-size: 22px;
     margin-top: 1px;
-    margin-left: 17px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 ul li:hover {
     color: lightgray;
 }
+ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: lightgray;
+}
 
 .logo h1 {
-    font-size: 33px;
+    font-size: 30px;
 }
 
 .main {

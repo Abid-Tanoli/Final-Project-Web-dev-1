@@ -5,16 +5,15 @@
 }
 
 body{
-    background-color: burlywood;
-    color: #fff;
-}
+    background-color: #f0f9f0; /* Light mint green for a fresh nature feel */
+    font-family: 'Arial', sans-serif;
+  }
 
 .slider{
     position: relative;
     overflow: hidden;
-    border: solid 10px black;
+    border-radius: 20px;
     top: 10px;
-    left: 130px;
     width: 80vw;
     height: 80vh;
 }
@@ -22,9 +21,9 @@ body{
 .slide{
     position: absolute;
     top:0px;
-    left:0px;
-    height: 100%;
-    width: 100%;
+    left:2px;
+    height: 100vh;
+    width: 98vw;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -100,30 +99,38 @@ body{
     }
 }
 
-#next{
+#prev, #next {
     position: absolute;
-    top:60%;
-    right: 12vw;
-    padding: 10px 15px;
-    outline:none;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: black;
-    font-size: 3em;
+    top: 90%;
+    transform: translateY(10%);
+    padding: 12px 16px;
+    border-radius: 50%;
+    background-color: #ffffff00;
+    border: none;
+    color: wheat;
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
 }
-#prev{
-    position: absolute;
-    top:60%;
-    left:160px;
-    padding: 10px 15px;
-    outline:none;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: black;
-    font-size: 3em;
+
+#prev:hover, #next:hover {
+    color: white;
+    transform: translateY(-50%) scale(1.1);
 }
+
+#prev:focus, #next:focus {
+    outline: none; 
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
 
 .slide:first-child{
     background-image: url(./Images/Slide/1.jpg);
@@ -169,8 +176,8 @@ body{
 .dots{
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+   
 }
 .dot{
     position: relative;
@@ -216,7 +223,7 @@ body{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
-    color: white;
+    color: blueviolet;
     padding-top: 25px;
     animation-name: storylist;
     animation-duration: 10s;
@@ -232,18 +239,20 @@ body{
     25% { background-color: burlywood;}
     50% { background-color: coral;}
     75% { background-color: slateblue;}
-    100% { background-color: peachpuff;}
-    
+    100% { background-color: peachpuff;}   
 }
 .responsive-story-img {
     width: 280px;
     height: 200px;
 }
 .story-name {
+    height: 20vh;
     width: 20.5vw;
+    margin-top: -7px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-justify: newspaper;
     gap: 20px;
     justify-content: space-evenly;
     font-size: 1.5em;
@@ -264,16 +273,18 @@ body{
 }
 .story-p {
     width: 20.5vw;
+    height: 150vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-evenly;
-    font-size: .7em;
-    color: yellow;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: green;
     animation-name: story-p;
-    animation-duration: 10s;
-    animation-iteration-count: 4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     animation-fill-mode: alternate; 
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
@@ -309,12 +320,12 @@ body{
     color: black;
 }
 .story-footer {
-    background-color: blueviolet;
+    background-color: #333;
     color: white;
-    padding: 15px;
-    border-radius: 5px; 
+    padding: 48px 0;
     margin-top: 20px; 
     text-align: center;
+    height: 28vh;
 }
 
 .footer-title {
@@ -328,18 +339,17 @@ body{
 }
 
 .footer-links {
-    margin-top: 10px;
-}
-
-.footer-link {
-    align-content: space-evenly;
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    gap: 100px;
+    background-color: #33333391;
+    margin-top: 20px;
+    gap: 30px;
     color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
+    padding: 5px 0px;
     border-radius: 3px;
+    transition: color 0.3s ease;
+    height: 10vh;
 }
 
 .footer-link:hover {

@@ -371,3 +371,101 @@
         padding: 8px 12px;
     }
 }
+/* Large Screens (1601px and above) */
+@media screen and (min-width: 1601px) {
+    .story-footer {
+        padding: 48px 0;
+        height: 28vh;
+    }
+
+    .footer-title {
+        font-size: 1.5em;
+    }
+
+    .story-footer p {
+        font-size: 1em;
+    }
+
+    .footer-links {
+        height: 10vh;
+        gap: 30px;
+    }
+
+    .footer-link {
+        font-size: 1em; /* Default size for large screens */
+    }
+}
+
+/* Medium Screens (1280px to 1600px) */
+@media screen and (max-width: 1600px) {
+    .story-footer {
+        padding: 40px 0;
+    }
+
+    .footer-title {
+        font-size: 1.4em;
+    }
+
+    .footer-link {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablets (940px to 1280px) */
+@media screen and (max-width: 1280px) {
+    .story-footer {
+        padding: 32px 0;
+        height: auto; /* Allows for flexible height */
+    }
+
+    .footer-title {
+        font-size: 1.3em;
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stacks links vertically */
+        gap: 15px; /* Reduces gap between links */
+    }
+
+    .footer-link {
+        font-size: 0.8em;
+    }
+}
+
+/* Small Tablets (768px to 940px) */
+@media screen and (max-width: 768px) {
+    .story-footer {
+        padding: 24px 0;
+    }
+
+    .footer-title {
+        font-size: 1.2em;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-link {
+        font-size: 0.7em;
+    }
+}
+
+/* Mobile Phones (480px to 768px) */
+@media screen and (max-width: 480px) {
+    .story-footer {
+        padding: 16px 0;
+    }
+
+    .footer-title {
+        font-size: 1em;
+    }
+
+    .footer-links {
+        gap: 5px; /* Further reduce spacing */
+    }
+
+    .footer-link {
+        font-size: 0.6em;
+    }
+}
