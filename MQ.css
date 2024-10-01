@@ -109,16 +109,9 @@
 
 
 @media screen and (max-width: 1600px) {
-    .logo h1 {
-        font-size: 2.2em;
-    }
-
-    ul li {
-        font-size: 1.3em;
-    }
     .slider {
         width: 80vw;
-        height: 100vh;
+        height: 80vh;
     }
 
     .content {
@@ -132,76 +125,19 @@
         font-size: 4em;
     }
     #next{
-        position: absolute;
-        top:70%;
         right:25vw;
     }
     #prev{
-        position: absolute;
-        top:70%;
         left:10vw;
     }
     .dots{
         position: absolute;
-        bottom: -230px;
         left: 530px;
     }
     .dot {
         height: 35px;
         width: 35px;
    }
-   .container{
-    width: 80vw;
-    margin-top: 40px;
-}
-
-.main {
-    font-size: 4em;
-    width: 80vw;
-    margin-left: -20px;
-}
-
-.container .story .storylist {
-    width: 80vw;
-    margin-left: -20px;
-}
-.responsive-story-img{
-    height: 260px;
-    width: 300px;
-}
-.story-name {
-    font-size: 2em;
-    width: 20vw;
-    height: 48vh;
-}
-
-.story-p {
-    font-size: 2em;
-    width: 20vw;
-    height:330vh;
-}
-
-.btn {
-    font-size: 1.5em;
-    padding: 8px 12px;
-}
-
-
-    .story-footer {
-        height: 37vh;
-        width: 99vw; 
-    }
-
-    .footer-title {
-        font-size: 1.5em;
-    }
-
-    .footer-links {
-        gap: 20px;
-        font-size: 1em;
-        width: 99vw;
-        height: 20vh;
-    }
 }
 
 
@@ -214,8 +150,9 @@
         font-size: 1.3em;
     }
     .slider {
-        width: 80vw;
+        width: 90vw;
         height: 100vh;
+        margin-left: 20px;
     }
 
     .content {
@@ -268,14 +205,14 @@
 }
 .story-name {
     font-size: 2em;
-    width: 32vw;
-    height: 48vh;
+    width: 31vw;
+    height: 40vh;
 }
 
 .story-p {
     font-size: 2em;
-    width: 32vw;
-    height:360vh;
+    width: 31vw;
+    height:320vh;
 }
 
 .btn {
@@ -308,7 +245,7 @@
     
     header {
         padding: 15px;
-        width: 97vw;
+        width: 99vw;
     }
     nav {
         flex-direction: column;
@@ -330,7 +267,7 @@
     .slider {
         width: 90vw;
         height: 90vh;
-        margin-left: -12px;
+        margin-left: 6px;
     }
     .slide{
         width: 90vw;
@@ -360,7 +297,7 @@
     #next{
         position: absolute;
         top:75%;
-        right:10vw;
+        right:20vw;
     }
     #prev{
         position: absolute;
@@ -369,7 +306,7 @@
     }
     .dots{
         position: absolute;
-        bottom: -480px;
+        bottom: -330px;
         left: 330px;
     }
     .dot {
@@ -416,7 +353,7 @@
     padding: 24px 0;
     font-size: 1.8em;
     width: 97vw;
-    height: 70vh;
+    height: 53vh;
 }
 
 .footer-title {
@@ -426,7 +363,7 @@
 .footer-links {
     gap: 10px;
     font-size: 1.2em;
-    height: 60vh;
+    height: 25vh;
     width: 97vw;
 }
 }
@@ -435,7 +372,7 @@
 @media screen and (max-width: 768px) {
     header {
         padding: 15px;
-        width: 97vw;
+        width: 99vw;
     }
 
     .logo h1 {
@@ -447,7 +384,7 @@
     }
     .slider {
         width: 95vw;
-        margin-left: -40px;
+        margin-left: 20px;
     }
     .slide{
         left:-2px;
@@ -471,33 +408,28 @@
 
     #prev,
     #next {
-        margin-top: 240px;
+        margin-top: 270px;
         color: blueviolet;
         font-size: 3em;
     }
     #next{
-        position: absolute;
         top:85%;
-        right:10vw;
+        right:20vw;
     }
     #prev{
-        position: absolute;
         top:85%;
-        left:10vw;
+        left:20vw;
     }
 
     .dots{
         position: absolute;
-        top: 850px;
-        left: 220px;
+        top: 750px;
+        left: 350px;
         width: 25vw;
     }
     .dot {
         height: 18px;
         width: 18px;
-        position: relative;
-        cursor: pointer;
-        margin: 0 2px;
     }
 
     .container{
@@ -522,13 +454,13 @@
     }
     .story-name {
         font-size: 2em;
-        width: 52vw;
+        width: 50.5vw;
         height: 45vh;
     }
    
     .story-p {
         font-size: 2em;
-        width: 52vw;
+        width: 50.5vw;
         height: 330vh;
     }
 
@@ -541,7 +473,7 @@
         padding: 24px 0;
         font-size: 1.5em;
         width: 99vw;
-        height: 57vh;
+        height: 46vh;
     }
 
     .footer-title {
@@ -552,6 +484,8 @@
     .footer-links {
         gap: 10px;
         font-size: 0.7em;
+        width: 99vw;
+        height: 10vh;
     }
 }
 
@@ -559,7 +493,7 @@
 @media screen and (max-width: 480px) {
     
     header {
-        width: 97vw;
+        width: 99vw;
         padding: 10px;
         height: 48vh;
     }
@@ -580,8 +514,8 @@
     }
     .slider {
         height: 50vh;
-        width: 98vw;
-        margin-left: -45px;
+        width: 95vw;
+        margin-left: 5px;
     }
 
     .content {
@@ -609,52 +543,52 @@
     #next{
         position: absolute;
         top:67%;
-        right: 15vw;
+        right: 20vw;
     }
     #prev{
         position: absolute;
         top:67%;
-        left:15vw;
+        left:20vw;
     }
     .dots{
-        margin-bottom: -235px;
-        margin-left: -120px;
+        margin-left: -70px;
     }
 
     .dot {
-        height: 15px;
-        width: 15px;
-        top: -160px;
+        height: 10px;
+        width: 10px;
+        top: -365px;
         left: 20px;
     }
 
     .container{
-        width: 80vw;
+        width: 60vw;
         margin-top: 40px;
-        margin-left: 60px;
+        margin-left: 80px;
     }
     .main {
-        width: 80vw;
+        width: 40vw;
         font-size: 3em;
     }
     .container .story .storylist {
         width: 80vw;
+        margin-left: -60px;
     }
     .responsive-story-img{
         height: 200px;
-        width: 300px;
+        width: 250px;
     }
     
     .story-name {
         font-size: 1.5em;
-        width: 73.5vw;
+        width: 58vw;
         height: 25vh;
     }
    
     .story-p {
         font-size: 1.5em;
-        width: 73.5vw;
-        height: 240vh;
+        width: 58vw;
+        height: 290vh;
     }
 
     .btn {
@@ -663,9 +597,9 @@
     }
     .story-footer {
         padding: 16px 0;
-        width: 99vw;
-        height: 50vh;
-        font-size: 1.3em;
+        width: 98vw;
+        height: 25vh;
+        font-size: 0.7em;
     }
 
     .footer-title {
@@ -674,7 +608,8 @@
 
     .footer-links {
         gap: 5px;
-        font-size: 2em;
-        height: 55vh;
+        font-size: 0.7em;
+        height: 25vh;
+        width: 98vw;
     }
 }
